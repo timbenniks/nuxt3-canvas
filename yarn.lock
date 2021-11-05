@@ -657,13 +657,13 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.1.tgz#8f80dd965ad81f3e1bc26d6f5c727e132721ff40"
   integrity sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==
 
-"@uniformdev/canvas@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-12.0.0.tgz#49ce7b07c8477a61e008c88b709a02f11e9212d5"
-  integrity sha512-qJl0EPzWtxpSjdHj9ug+aGe5AvdO1bW+/JcWREKjMwp7uDfcpeihxpXYn/+lZp3QgqGvraJ9AKmDHVz4km45IA==
+"@uniformdev/canvas@12.2.1-alpha.23":
+  version "12.2.1-alpha.23"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-12.2.1-alpha.23.tgz#98e5f5765d4e36353f0f7c240361772c3f162c28"
+  integrity sha512-mJBWyPtR2a/BnL5yj/ba2SWyYoV4gW3zbdciaE11OSuZbbWiXqMpvjOGffEeXi2b6f0EPg8+cECS74BFFh3Stw==
   dependencies:
-    "@uniformdev/optimize-common" "^12.0.0"
-    "@uniformdev/optimize-tracker-common" "^12.0.0"
+    "@uniformdev/optimize-common" "^12.2.1-alpha.23+9f08d814"
+    "@uniformdev/optimize-tracker-common" "^12.2.1-alpha.23+9f08d814"
     chalk "^4.1.2"
     diff "^5.0.0"
     isomorphic-unfetch "^3.1.0"
@@ -674,17 +674,20 @@
     p-throttle "^4.1.1"
     pusher-js ">=7.0.3"
 
-"@uniformdev/optimize-common@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-common/-/optimize-common-12.0.0.tgz#b293dc6f6c09bbbc9b493a88bb319af565528f7d"
-  integrity sha512-njXUo+DlZvRoXVw/shMP51G+GtRk+zCVWjv7xWdRXfk7AqUaG/rC4o/rOzIuKWSyKKLWCbThvoV7ZKkZpHh8nA==
-
-"@uniformdev/optimize-tracker-common@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-common/-/optimize-tracker-common-12.0.0.tgz#d36029e67d00727c7d6a273507cda5829b234df6"
-  integrity sha512-C9/dGVfO0xJcxVQCVzDsxiCPts9FMH5LwthoT9gGDNTiIr9hoXgQoRYLT/tBgyjc7xNNTOf7xCZGHwP9ap2iGw==
+"@uniformdev/optimize-common@^12.2.1-alpha.23+9f08d814", "@uniformdev/optimize-common@^12.2.1-alpha.24+f20c3013":
+  version "12.2.1-alpha.24"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-common/-/optimize-common-12.2.1-alpha.24.tgz#d0c1bd0d7052946e2135e3c958d505930b5ee5f5"
+  integrity sha512-JYJGjSHfiW+Eo1E5BcYSFGzr5yhh2fdpLXb6i3AU624mEuQQ/NCWN6sM7tXI3rgQWx+6axbnu/gGExWHhGMotQ==
   dependencies:
-    "@uniformdev/optimize-common" "^12.0.0"
+    p-retry "^4.6.1"
+    p-throttle "^4.1.1"
+
+"@uniformdev/optimize-tracker-common@^12.2.1-alpha.23+9f08d814":
+  version "12.2.1-alpha.24"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-common/-/optimize-tracker-common-12.2.1-alpha.24.tgz#4ab748add3461dfb4e42c3a54ddde7d64d84aa7c"
+  integrity sha512-2+oRBBl+fKfvr1M+fl1sLnHNRdTAczJVkd050YFhOS+EBVxfP4zGlJQVNQ+LcS2TO7DNluVh4UWQa2uOQbpX7A==
+  dependencies:
+    "@uniformdev/optimize-common" "^12.2.1-alpha.24+f20c3013"
 
 "@vercel/nft@^0.17.0":
   version "0.17.0"

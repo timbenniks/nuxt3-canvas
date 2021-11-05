@@ -2,7 +2,6 @@
 
 <script>
 import { CanvasClient } from "@uniformdev/canvas";
-//import { useNuxtApp } from "#app";
 
 export default {
   async setup() {
