@@ -1,10 +1,13 @@
-import { createClient } from 'contentful'
+import contentful from 'contentful'
+const { createClient } = contentful
+
+import config from '#config'
 
 export const getClient = () => {
   const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    environment: process.env.CONTENTFUL_ENVIRONMENT,
-    accessToken: process.env.CONTENTFUL_CDA_ACCESS_TOKEN,
+    space: config.contentful.SPACE_ID,
+    environment: config.contentful.ENVIRONMENT,
+    accessToken: config.contentful.CDA_ACCESS_TOKEN,
   })
 
   return client
