@@ -1,22 +1,7 @@
-<template>dd</template>
+<template>{{ data }}</template>
 
-<script>
-import { CanvasClient } from "@uniformdev/canvas";
-
-export default {
-  async setup() {
-    const { $config } = useNuxtApp();
-
-    const client = new CanvasClient({
-      apiKey: $config.UNIFORM_API_KEY,
-      projectId: $config.UNIFORM_PROJECT_ID,
-    });
-
-    const { composition } = await client.getCompositionBySlug({
-      slug: "/about",
-    });
-
-    return { composition };
-  },
-};
+<script setup>
+const { data } = await useAsyncData("composition", () =>
+  $fetch("/api/composition")
+);
 </script>
