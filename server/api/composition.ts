@@ -13,15 +13,12 @@ export default async () => {
     slug: "/about",
   });
 
-
-  const context = {
-    preview: false,
-  };
-
   await enhance({
     composition,
     enhancers,
-    context,
+    context: {
+      preview: false,
+    },
   });
 
   return { composition };

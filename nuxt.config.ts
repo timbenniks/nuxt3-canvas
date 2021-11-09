@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
+  build: {
+    transpile: ['crypto', 'tslib/tslib.es6.js', 'lower-case/dist.es2015/index.js']
+  },
   privateRuntimeConfig: {
     contentful: {
       SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
